@@ -1,0 +1,35 @@
+<svg width="101" height="78" viewBox="0 0 101 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(100 -1069)" figma:type="canvas">
+<g id="Group" figma:type="frame">
+<g id="Vector" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(0.814713 -0.579865 0.579865 0.814713 -111 1095.7)" fill="#EFEFEF"/>
+</g>
+<g id="Vector" figma:type="vector">
+<use xlink:href="#path1_fill" transform="matrix(0.912264 -0.409603 0.409603 0.912264 -87.0208 1098.27)" fill="#2C2F38"/>
+</g>
+<g id="Vector" filter="url(#filter0_d)" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-58.1124 1069)" fill="#EFEFEF"/>
+</g>
+<g id="Vector" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(-43.647 1089.69)" fill="#FF6666"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="-60" y="1068" width="62" height="75" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<desc>type="dropShadow" x="0" y="1" size="1" spread="0" color="0,0,0,0.15" blend="normal"</desc>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="1"/>
+<feGaussianBlur stdDeviation="0.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" d="M 2.53063 63.2594L 41.8221 71.6547C 43.5534 72.0247 45.26 70.9337 45.6335 69.2186L 58.0396 12.2417C 58.4132 10.5266 57.3118 8.83608 55.5804 8.46602L 16.2904 0.0720938C 14.559 -0.297965 12.8525 0.793095 12.4789 2.5082L 0.072841 59.485C -0.30072 61.1988 0.799288 62.8893 2.53063 63.2594Z"/>
+<path id="path1_fill" d="M 29.1463 11.6753C 27.9125 9.57589 25.2998 6.98867 21.3809 3.98515C 19.8509 2.81258 18.4421 1.82653 17.5294 1.20575C 15.7569 1.31853e-07 15.7052 1.31853e-09 15.4875 1.31853e-09C 15.2704 1.31853e-09 15.2189 0 13.4471 1.19939C 12.5338 1.81782 11.1235 2.80028 9.59249 3.96994C 5.66883 6.96724 3.04875 9.55972 1.80546 11.6752C 0.539921 13.8284 0 15.8185 0 18.3298C 0 24.6928 4.65903 27.5908 8.98788 27.5908C 10.8867 27.5908 12.3168 27.1076 13.3862 26.4456L 12.2024 30.9546L 18.7049 30.9546L 17.5089 26.3993C 18.5841 27.0849 20.0338 27.5908 21.9729 27.5908C 26.2987 27.5908 30.9546 24.6928 30.9546 18.3298C 30.9546 15.8223 30.4139 13.8322 29.1463 11.6753Z"/>
+<path id="path2_fill" d="M 11.3143 30.2177C 4.4082 22.9504 1.37559 16.83 0.270073 12.4767C -1.02154 7.38875 2.46319 1.17421 7.65997 0.163721C 13.7679 -1.02429 16.8832 4.64267 16.8832 4.64267C 16.8832 4.64267 22.08 0.752267 27.1499 4.3286C 31.4631 7.37237 32.0531 14.4567 28.7586 18.5643C 25.941 22.0791 20.6312 26.4174 11.3143 30.2177Z"/>
+</defs>
+</svg>
