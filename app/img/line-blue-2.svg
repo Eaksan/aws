@@ -1,0 +1,38 @@
+<svg width="284" height="66" viewBox="0 0 284 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>line-blue-2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-920 -3558)" figma:type="canvas">
+<g id="line-blue-2" figma:type="frame">
+<g id="Vector 4" filter="url(#filter0_d)" figma:type="vector">
+<use xlink:href="#path0_stroke" transform="translate(926.5 3565)" fill="#2F80ED"/>
+</g>
+<g id="Ellipse 6" filter="url(#filter1_d)" figma:type="ellipse">
+<use xlink:href="#path1_fill" transform="matrix(-1 0 0 -1 929 3567)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="921" y="3561" width="283" height="63" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<desc>type="dropShadow" x="0" y="2" size="4" spread="0" color="0,0,0,0.25" blend="normal"</desc>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<filter id="filter1_d" filterUnits="userSpaceOnUse" x="920" y="3558" width="14" height="13" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<desc>type="dropShadow" x="0" y="0" size="4" spread="0" color="0.184314,0.501961,0.929412,1" blend="normal"</desc>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="0"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.184314 0 0 0 0 0.501961 0 0 0 0 0.929412 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_stroke" d="M 272 52.5C 272.552 52.5 273 52.0523 273 51.5C 273 50.9477 272.552 50.5 272 50.5L 272 52.5ZM 73.5 51.5L 72.9262 52.319L 73.1845 52.5L 73.5 52.5L 73.5 51.5ZM 0.573836 -0.81897C 0.121531 -1.13589 -0.502049 -1.02614 -0.81897 -0.573836C -1.13589 -0.121531 -1.02614 0.502049 -0.573836 0.81897L 0.573836 -0.81897ZM 272 50.5L 73.5 50.5L 73.5 52.5L 272 52.5L 272 50.5ZM 74.0738 50.681L 0.573836 -0.81897L -0.573836 0.81897L 72.9262 52.319L 74.0738 50.681Z"/>
+<path id="path1_fill" d="M 5 2.5C 5 3.88071 3.88071 5 2.5 5C 1.11929 5 0 3.88071 0 2.5C 0 1.11929 1.11929 0 2.5 0C 3.88071 0 5 1.11929 5 2.5Z"/>
+</defs>
+</svg>

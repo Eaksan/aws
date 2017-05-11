@@ -26,6 +26,11 @@
 	100%
 		transform: translate(-600px, -600px)
 		opacity: 1
+@keyframes graf
+	0%
+		stroke-dashoffset: 1025
+	100%
+		stroke-dashoffset: 580
 
 
 *::-webkit-input-placeholder
@@ -86,6 +91,18 @@ body
 			left: -72px
 		&:after
 			right: -72px
+	.shadow
+		position: relative
+		&:after
+			position: absolute
+			z-index: -1
+			content: ""
+			width: 100%
+			height: 100%
+			background-color: rgba(#000, 0.15)
+			filter: blur(20px)
+			top: 18px
+			left: 20px
 .img-responsive
 	display: block
 	max-width: 100%
@@ -393,7 +410,7 @@ header
 	#sect-2
 		background: url("../img/Rectangle 8.svg") no-repeat 0 435px
 		h2
-			font-family: "Bebas Neue Cyrillic"
+			font-family: $bebas
 			text-align: center
 			font-style: normal
 			font-weight: normal
@@ -405,6 +422,9 @@ header
 			margin-bottom: 90px
 			span
 				color: $red
+			i
+				font-family: "bebas-light"
+				font-style: normal
 		.col-sm-4
 			text-align: center
 			padding-top: 24px
@@ -436,7 +456,7 @@ header
 				span
 					vertical-align: bottom
 	#sect-3
-		background: url("../img/3bg.svg") center no-repeat
+		background: url("../img/3bg.svg") center 235px no-repeat
 		h2
 			text-align: center
 		.container
@@ -449,21 +469,72 @@ header
 			box-shadow: 0px 15px 50px rgba(47, 128, 237, 0.15)
 			padding: 20px
 			position: absolute
+			&:after
+				position: absolute
+				content: ""
+				display: block
+				width: 0
+				height: 0
+				border-width: 10px 0 10px 10px
+				border-style: solid
+				border-color: transparent
+				border-left-color: #fff
+				right: -10px
+				top: 10px
+			&:before
+				content: ""
+				position: absolute
+				width: 10px
+				height: 10px
+				border-radius: 5px
+				right: -35px
+				top: 15px
+				background-color: #2F80ED
 			&.win
 				top: 140px
 				left: 0
+				&:after
+					top: 100px
+				&:before
+					top: 105px
 			&.indi
 				right: 49px
 				top: 130px
 				width: 545px
+				&:after
+					top: 180px
+					border-color: transparent
+					border-width: 10px 10px 10px 0
+					border-right-color: #fff
+					right: auto
+					left: -10px
+				&:before
+					top: 185px
+					right: auto
+					left: -35px
 			&.power
 				top: 400px
 				left: 0
 				width: 495px
+				&:after
+					top: 45px
+				&:before
+					top: 50px
 			&.manager
 				right: 0
 				top: 427px
 				width: 545px
+				&:after
+					top: 75px
+					border-color: transparent
+					border-width: 10px 10px 10px 0
+					border-right-color: #fff
+					right: auto
+					left: -10px
+				&:before
+					top: 80px
+					right: auto
+					left: -35px
 			h4
 				font-family: "Roboto";
 				font-style: normal;
@@ -479,10 +550,140 @@ header
 				font-weight: normal;
 				font-size: 18px;
 				margin-bottom: 0
-				line-height: 25 px;
+				line-height: 25px;
 				color: #333333
+	#sect-4
+		h2
+			height: 150px
+			text-align: center
+			font-weight: bold
+		.col-sm-6
+			color: $blue
+			.img-box
+				background: #FFFFFF
+				box-shadow: 0px 15px 50px rgba(47, 128, 237, 0.15)
+				border-radius: 5px
+			h4
+				text-align: center
+				font-size: 25px
+				margin-top: 34px
+				span
+					font-size: 12px
+					color: #999
+					display: block
+					padding-top: 10px
+			&:last-of-type
+				background: url("../img/bg-dots.png") center no-repeat
+				position: relative
+				img
+					position: relative
+					top: 60px
+					left: 228px
+				p
+					position: absolute
+					font-size: 25px
+					line-height: 25px
+					&:after
+						content: ""
+						position: absolute
+					&:first-of-type
+						max-width: 200px
+						top: 56px
+						left: 39px
+						&:after
+							width: 250px
+							height: 70px
+							background: url("../img/line-blue-1.svg") 0 0 no-repeat
+							left: -4px
+							bottom: -75px
+					&:last-child
+						max-width: 250px
+						top: 295px
+						right: 60px
+						text-align: right
+						&:after
+							width: 275px
+							height: 70px
+							background: url("../img/line-blue-2.svg") 0 0 no-repeat
+							right: 0
+							top: -65px
+	#sect-5
+		h2
+			text-align: center
+			margin-bottom: 0
+		.slider-first
+			padding-top: 45px
+			padding-bottom: 95px
+			position: relative
+			overflow: hidden
+			.dots, .navigation
+				position: absolute
+			.dots
+				bottom: 10px
+				left: 100px
+				ul
+					list-style: none
+					margin: 0
+					padding: 0
+					li
+						font-size: 0
+						display: inline-block
+						button
+							line-height: 0
+							font-size: 0
+							padding: 0
+							height: 8px
+							width: 8px
+							background-color: #E6E6E6
+							border: none
+							border-radius: 4px
+							transition: 0.2s
+							outline: 0
+						&.active-slide, &:hover
+							opacity: 1
+							button, button:hover
+								background-color: $red
+								width: 17px
+			.navigation
+				top: 10px
+				right: 0
+				color: #000
+				button
+					background-color: #FFF
+					border-radius: 3px
+					border: 1px solid transparent
+					padding: 12px
+					font-size: 14px
+					line-height: 17px
+					transition: 0.2s
+					&:hover
+						border-color: #E5E5E5
+					.chevron
+						fill: #2F80ED
+					svg
+						padding: 0 10px
+			.easlide
+				.col-lg-6
+					iframe, .vshadow
+						height: 403px
+						width: 748px
+					.vshadow
+						position: absolute
+						&:after
+							top: 40px
+							left: 40px
+					.img-box
+						width: 50%
+						margin-left: 67px
+						img
+							width: 100%
+							height: 100%
+					p
+						padding-left: 67px
+						padding-top: 65px
+						color: #333
 
-
+				
 	
 
 @import "media" // Всегда в конце
