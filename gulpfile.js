@@ -28,6 +28,8 @@ gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/bootstrap/bootstrap.js',
+		'app/libs/formstyler/jquery.formstyler.min.js',
+		'app/libs/fild-style/nariko.js',
 		'app/libs/fullpage/jquery.fullpage.min.js',
 		])
 	.pipe(concat('libs.min.js'))

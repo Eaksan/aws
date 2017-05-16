@@ -108,20 +108,17 @@ body
 	max-width: 100%
 	height: auto
 header
-	padding-top: 30px
 	box-shadow: 0 6px 10px rgba(#000, 0.1)
 	position: fixed
-	left: 50%
-	margin-left: -750px
+	width: 100%
 	top: 0
 	background-color: #FFF
 	z-index: 10000
-	.navbar	
-		margin-bottom: 21px
+	.navbar
 		.navbar-header
 			.navbar-brand
 				height: auto
-				padding: 0
+				padding: 20px 0 0
 		.navbar-collapse
 			.navbar-nav
 				padding-top: 4px
@@ -188,14 +185,14 @@ header
 					.dropdown-menu
 						background-color: #f2f2f2
 						border: none
-						width: 700px
-						top: 65px
-						left: -100px
 						padding: 42px 0
 						border-radius: 0
 						a
 							display: block
 							padding: 0
+							font-family: $bebas
+							font-weight: bold
+							padding-left: 40px
 						h3
 							font-size: 27px
 							margin-bottom: 0
@@ -203,19 +200,8 @@ header
 						p
 							font-size: 16px
 							line-height: 20px
-						&:after
-							content: ""
-							position: absolute
-							top: -15px
-							left: 175px
-							width: 32px
-							height: 70px
-							background-color: #f2f2f2
-							border-radius: 85% 85% 0 0
 						.col-lg-5, .col-lg-7
-							padding-left: 42px
-							padding-right: 42px
-
+							width: 100%
 							a
 								h3
 									color: #333333
@@ -226,11 +212,101 @@ header
 									color: #828282
 									h3
 										color: $red
-						.col-lg-5
-							border-right: 1px solid #ccc
-						.col-lg-7
-							border-left: 1px solid #ccc
-							margin-left: -1px
+				.navbar-right
+					float: none
+					margin-right: 0
+	.navbar
+		margin-bottom: 0
+		border: none
+		.navbar-header
+			width: 100%
+			.navbar-toggle
+				display: block
+				margin-right: -17px
+				margin-top: 0
+				margin-bottom: 0
+				padding: 47px 43px
+				border-radius: 0
+				border: 1px solid #ccc
+				height: 110px
+				.icon-bar
+					background-color: #2d2d2d
+					&:last-child
+						width: 70%
+
+				&.opened
+					.icon-bar
+						&:nth-child(2)
+							animation: navtoggle 0.5s forwards
+						&:nth-child(3)
+							animation: navtoggle2 0.5s forwards
+							transform: rotate(-45deg) translateY(-10px)
+						&:last-child
+							display: none
+			.navbar-brand
+				padding-left: 20px
+		.navbar-collapse.collapse, .navbar-collapse.collapsing
+			position: absolute
+			top: 110px
+			right: 0
+			width: 300px
+			margin: 0
+			padding: 22px 0 0
+			background-color: #f2f2f2
+			z-index: 1000
+			.navbar-nav
+				width: 100%
+				background-color: #f2f2f2
+				display: block
+				left: auto
+				&.navbar-right
+					li
+						&:last-child
+							border: none
+				li
+					display: block
+					float: none
+					padding: 9px 0 9px 0
+					border-bottom: 1px solid #ccc
+					a
+						padding-left: 40px
+						img
+							display: none
+					&.dropdown
+						padding:  9px 0 0
+						& > a
+							padding-left: 40px
+							padding-bottom: 9px
+						.dropdown-menu
+							position: relative
+							padding: 0
+							width: 100%
+							float: none
+							left: 0
+							top: 0
+							background-color: #e6e6e6
+							box-shadow: none
+							box-shadow: inset 0 0 5px rgba(#000, 0.15)
+							h3
+								line-height: 45px
+								font-weight: bold
+								color: #000
+							p
+								display: none
+							&:after
+								content: none
+							.col-lg-5, .col-lg-7
+								padding: 0
+								margin: 0
+								border: none
+							a
+								&:hover, &:focus
+									h3
+										color: $red
+
+					&.active
+						a:before
+							content: none
 .social
 	position: fixed
 	bottom: 44px
@@ -267,6 +343,7 @@ header
 	bottom: 60px
 	left: 50%
 	margin-left: -10px
+	z-index: 1000
 	#mouse2
 		animation: mousescroll 1.5s infinite 
 .tooltip
@@ -682,8 +759,288 @@ header
 						padding-left: 67px
 						padding-top: 65px
 						color: #333
+	#sect-6
+		text-align: center
+		padding-top: 150px
+		.col-sm-6
+			h3
+				font-family: $bebas
+				color: $blue
+				font-size: 60px
+				line-height: 60px
+				margin-top: 55px
+				margin-bottom: 30px
+			.white-box
+				background: #FFF
+				box-shadow: 0 15px 50px rgba(#2F80ED, 0.15)
+				margin-left: 65px
+				margin-right: 85px
+				padding-top: 25px
+				padding-bottom: 40px
+				margin-bottom: 44px
+				img
+					margin-right: 50px
+				p
+					padding: 23px 85px 0
+			a
+				display: inline-block
+				position: relative
+				background: linear-gradient(180deg, #F97A7D 0%, #A22A51 100%)
+				border-radius: 50px
+				padding: 15px 52px
+				font-size: 25px
+				line-height: 100%
+				color: #FFFFFF
+				display: inline-block
+				&:after
+					position: absolute
+					content: ""
+					z-index: -1
+					border-radius: 50px
+					width: 90%
+					height: 90%
+					left: 5%
+					bottom: -6px
+					background: linear-gradient(180deg, #F97A7D 0%, #A22A51 100%)
+					filter: blur(4px)
+			&:first-of-type
+				background-color: #F3F8FE
+				img
+					margin-bottom: 70px
+					margin-top: 35px
+	#sect-7
+		.col-sm-6
+			text-align: center
+			height: 700px
+			h3
+				font-size: 60px
+				font-family: $bebas
+				color: $blue
+				line-height: 60px
+				margin-top: 110px
+			p
+				color: #666
+				font-size: 18px
+				line-height: 24px
+				padding: 0 20px
+				margin-top: 39px
+			.promo
+				position: relative
+				margin-left: auto
+				margin-right: auto
+				perspective: 800px
+				img
+					transition: all 0.6s ease-in-out
+					transform-origin: 100% 0
+					display: block
+					margin-left: auto
+					margin-right: auto
+					backface-visibility: hidden
+					transform-style: preserve-3d
+					&:first-child
+						position: absolute
+						left: 196px
+						top: 0px
+						z-index: 100
+						transform-origin: 0 100%
+						
+					&:last-of-type
+						transform: rotate3d(1,0,0,180deg)
+				&:hover
+					img
+						&:first-child
+							transform: rotate3d(1,0,0,-180deg)
+						&:last-child
+							transform: none
 
-				
+			&:last-of-type
+				background-color: #F3F8FE
+				position: relative
+				&:after
+					position: absolute
+					content: ""
+					width: 300%
+					height: 100%
+					left: 100%
+					top: 0
+					background-color: #F3F8FE
+				form
+					padding: 0 135px
+					position: relative
+					font-weight: normal
+					h3
+						color: $red
+						margin-top: 56px
+					.land-label
+						display: inline-block
+						color: $blue
+						font-size: 18px
+						font-weight: lighter
+					select, .jq-selectbox
+						background-color: transparent
+						border: none
+						margin-top: 19px
+						appearance: none
+						outline: none
+						margin-bottom: 15px
+						&.focused
+							.jq-selectbox__trigger-arrow
+								transform: rotate(180deg) translateY(-2px)
+					.jq-selectbox__dropdown
+						display: inline-block
+						box-shadow: 0 0 15px rgba(#000, 0.15)
+						background-color: #FFF
+						left: 0
+						padding-right: 20px
+					.jq-selectbox__select-text
+						display: inline-block
+						font-size: 25px
+					.jq-selectbox__trigger
+						display: inline-block
+						.jq-selectbox__trigger-arrow
+							display: inline-block
+							width: 7px
+							height: 10px
+							margin-left: 10px
+							transition: 0.2s
+							background: url("../img/icon/select-arrow.png") 0 3px no-repeat
+					ul
+						padding: 0
+						left: 0
+						display: block
+						width: 100%
+					ul li, .jq-selectbox__select
+						padding: 10px 5px 10px 40px
+						background-color: transparent
+					ul li, .jq-selectbox
+						background-color: transparent
+						&.land
+							background-repeat: no-repeat
+							background-position: 10px center
+							display: block
+							&.br
+								background-image: url("../img/icon/flag-br.jpg") 
+							&.ru
+								background-image: url("../img/icon/flag-ru.jpg") 
+							&.kz
+								background-image: url("../img/icon/flag-kz.jpg") 
+							&.ua
+								background-image: url("../img/icon/flag-ua.png")
+					.input--nariko
+						position: relative
+						display: block
+						text-align: left
+						input
+							border: none
+							border-bottom: 1px solid #394A6B
+							width: 100%
+							padding-top: 10px
+							outline: none
+							margin-bottom: 45px
+							color: #000
+							background-color: transparent
+							font-size: 25px
+							&::-webkit-input-placeholder
+								opacity: 0
+								transition: 0.3s
+								color: #333
+							&::-moz-placeholder
+								opacity: 0
+								color: #333
+								transition: 0.3s
+							&:-moz-placeholder
+								opacity: 0
+								color: #333
+								transition: 0.3s
+							&:-ms-input-placeholder
+								opacity: 0
+								color: #333
+								transition: 0.3s
+							&:focus
+								&::-webkit-input-placeholder
+									opacity: 1
+								&::-moz-placeholder
+									opacity: 1
+								&:-moz-placeholder
+									opacity: 1
+								&:-ms-input-placeholder
+									opacity: 1
+						label
+							position: absolute
+							font-size: 25px
+							color: $blue
+							font-weight: normal
+							top: 10px
+							transition: 0.2s
+							left: 0
+							cursor: text
+							width: 100%
+							&.error
+								color: $red
+								position: relative
+						&.input--filled
+							label
+								font-size: 18px
+								cursor: default
+								transform: translateY(-20px)
+					input[type="checkbox"]
+						display: none
+						& + label
+							padding-left: 40px
+							position: relative
+							font-size: 16px
+							line-height: 16px
+							font-size: 16px
+							color: #999
+							font-weight: lighter
+							margin-bottom: 45px
+							&:before
+								position: absolute
+								content: ""
+								width: 20px
+								height: 20px
+								border: 1px solid #394A6B
+								left: 0
+								top: 0
+						&:checked + label
+							&:after
+								position: absolute
+								content: ""
+								width: 23px
+								height: 20px
+								background-image: url("../img/icon/checked.svg")
+								background-repeat: no-repeat
+								left: 1px
+								top: 0
+					button
+						display: inline-block
+						position: relative
+						background: linear-gradient(180deg, #F97A7D 0%, #A22A51 100%)
+						border-radius: 50px
+						padding: 15px 18px
+						font-size: 25px
+						line-height: 100%
+						color: #FFFFFF
+						display: inline-block
+						border: none
+						outline: none
+						&:after
+							position: absolute
+							content: ""
+							z-index: -1
+							border-radius: 50px
+							width: 90%
+							height: 90%
+							left: 5%
+							bottom: -6px
+							background: linear-gradient(180deg, #F97A7D 0%, #A22A51 100%)
+							filter: blur(4px)
+							transition: 0.3s
+						&:hover, &:focus
+							&:after
+								opacity: 0
+						&:focus
+							box-shadow: inset 0 0 15px rgba(#000, 0.25)
 	
 
 @import "media" // Всегда в конце

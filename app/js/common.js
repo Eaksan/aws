@@ -149,9 +149,7 @@ $(function() {
   // слайдеры
   sliderAnimation($(".slider-first"), 100);
   //модальные окна
-  $(".img-box").colorbox();
-  $(".login").colorbox();
-  $(".registr").colorbox();
+  $("select").styler();
   // валидация
   $("form").validate();
   // плавный скрол
@@ -173,13 +171,9 @@ $(function() {
   };
 
   $(window).resize(function(){
-
-    sliderAnimation($(".slider-first"), 1000);
-    sliderAnimation($(".slider-second"), 1000);
-    if ( $(window).width() < 1248 ) {
+    if ( $(window).width() < 768 ) {
       navbarPosition();
     };
-
   });
 
   $(window).scroll(function(){
