@@ -145,6 +145,14 @@ function navbarPosition(){
 
 }
 
+function fixedPosition(){
+  var frameWidth = $(window).width(),
+    containerWidth = $(".container").width();
+  $(".registration").css("right", (frameWidth-containerWidth)/2);
+  $(".social").css("left", (frameWidth-containerWidth)/2);
+
+}
+
 $(function() {
   // слайдеры
   sliderAnimation($(".slider-first"), 100);
@@ -169,6 +177,8 @@ $(function() {
   if ( $(window).width() < 767 ) {
     $(".collapse.in").removeClass("in");
   };
+
+  fixedPosition();
 
   $(window).resize(function(){
     if ( $(window).width() < 768 ) {
@@ -196,14 +206,22 @@ $(function() {
 	// тултипы
 	$('[data-toggle="tooltip"]').tooltip()
 	// Fullpage активация
-	$("#fullpage").fullpage({
-		verticalCentered: false,
-		menu: "header",
-		navigation: true,//вертикальная пагинация
-	  css: true, //перемещение по блокам с анимацией(по умолчанию true)
-	  scrollingSpeed: 1000,//скорость прокрутки
-	  anchors: ['sec-1', 'sec-2', 'sec-3', 'sec-4', 'sec-5','sec-6','sec-7'],//якоря секций для функционирования меню
+	if( $(window).width() > 1260 ) {
+    $("#fullpage").fullpage({
+  		verticalCentered: false,
+  		menu: "header",
+  		navigation: true,//вертикальная пагинация
+  	  css: true, //перемещение по блокам с анимацией(по умолчанию true)
+  	  scrollingSpeed: 1000,//скорость прокрутки
+  	  anchors: ['sec-1', 'sec-2', 'sec-3', 'sec-4', 'sec-5','sec-6','sec-7'],//якоря секций для функционирования меню
+      afterLoad: function(anchorLink, index){
+        var loadedSection = $(this);
 
-	});
-
+        //using anchorLink
+        if(anchorLink == 'sec-7'){
+          $(".promo").addClass("show-anim");
+        }
+      }
+  	});
+  };
 });
