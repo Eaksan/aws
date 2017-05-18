@@ -150,7 +150,6 @@ function fixedPosition(){
     containerWidth = $(".container").width();
   $(".registration").css("right", (frameWidth-containerWidth)/2);
   $(".social").css("left", (frameWidth-containerWidth)/2);
-
 }
 
 $(function() {
@@ -158,8 +157,12 @@ $(function() {
   sliderAnimation($(".slider-first"), 100);
   //модальные окна
   $("select").styler();
+
   // валидация
-  $("form").validate();
+  // $("form").validate();
+
+  // колорбокс
+  $(".colorbox").colorbox();
   // плавный скрол
   $("a.scrollto").click(function() {
     var elementClick = $(this).attr("href")
@@ -173,23 +176,28 @@ $(function() {
   if ( $(window).width() < 1248 ) {
     navbarPosition();
   };
-
-  if ( $(window).width() < 767 ) {
-    $(".collapse.in").removeClass("in");
-  };
-
-  fixedPosition();
-
   $(window).resize(function(){
     if ( $(window).width() < 768 ) {
       navbarPosition();
     };
   });
 
-  $(window).scroll(function(){
-    $(".navbar-collapse.in").removeClass("in");
-    $(".navbar-toggle.opened").removeClass("opened").addClass("closed");
+  if ( $(window).width() < 1262 ) {
+    $('[data-toggle="tooltip"]').tooltip('show');
+  };
+  // позиция фикс объектов
+  fixedPosition();
+
+  $(".navbar-collapse").mouseenter(function() {
+    console.log('in');
+    $(".navbar").mouseleave(function() {
+      $(window).click(function() {
+        $(".navbar-toggle").removeClass("opened").addClass("closed");
+        $(".navbar-ex1-collapse").collapse('hide');
+      });
+    });
   });
+
 
   $(".navbar-toggle").click(function(){
     if($(this).hasClass("closed")){
@@ -206,7 +214,7 @@ $(function() {
 	// тултипы
 	$('[data-toggle="tooltip"]').tooltip()
 	// Fullpage активация
-	if( $(window).width() > 1260 ) {
+	if( $(window).width() > 1262 ) {
     $("#fullpage").fullpage({
   		verticalCentered: false,
   		menu: "header",

@@ -31,6 +31,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/formstyler/jquery.formstyler.min.js',
 		'app/libs/fild-style/nariko.js',
 		'app/libs/fullpage/jquery.fullpage.min.js',
+		'app/libs/colorbox/jquery.colorbox.js',
 		])
 	.pipe(concat('libs.min.js'))
 	// .pipe(uglify()) // Минимизировать весь js (на выбор)

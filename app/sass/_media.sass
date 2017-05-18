@@ -9,7 +9,7 @@
 	.mouse
 		bottom: 40px
 	.social
-		bottom: 24px
+		bottom: 15px
 
 	#fullpage
 		.registration
@@ -44,7 +44,7 @@
 			background: url("../img/Rectangle 8.svg") no-repeat 0 285px
 			h2
 				margin-bottom: 45px
-			.col-sm-4
+			.col-md-4
 				.item
 					margin: 0
 					padding: 20px 10px 0
@@ -96,7 +96,7 @@
 			h2
 				height: auto
 				margin-bottom: 80px
-			.col-sm-6
+			.col-md-6
 				&:last-of-type
 					img
 						top: 47px
@@ -126,18 +126,184 @@
 						.vshadow, iframe
 							width: 490px
 							height: 264px
+						.img-box
+							width: 72%
+							margin-left: 37px
+						p
+							padding-left: 37px
+							padding-top: 29px
 				.dots
 					bottom: 105px
-					left: 230px
-					margin-left: -50%
-@media only screen and (max-width : 1200px)
-	/**/
-
-
+					left: 243px
+					ul
+						margin-left: -50%
+				.navigation
+					top: auto
+					right: auto
+					bottom: 37px
+					left: 107px
+		#sect-6
+			padding-top: 110px
+			.col-sm-6
+				h3
+					font-size: 42px
+					line-height: 42px
+					margin-top: 49px
+					margin-bottom: 44px
+				.white-box
+					margin-left: 19px
+					margin-right: 19px
+					padding-top: 22px
+					margin-bottom: 19px
+					p
+						padding-left: 25px
+						padding-right: 25px
+				&:first-of-type
+					img
+						margin-top: 0
+						margin-bottom: 32px
+				&:last-of-type
+					h3
+						margin-bottom: 24px
+		#sect-7
+			.col-sm-6
+				height: 600px
+				h3
+					margin-top: 40px
+					font-size: 42px
+					line-height: 42px
+				p
+					margin-bottom: 20px
+				&:last-of-type
+					form
+						padding: 0 62px
+						h3
+							margin-top: 40px
+						.land-label
+							font-size: 16px
+						.jq-selectbox__select-text
+							font-size: 18px
+						.input--nariko
+							label
+								font-size: 18px
+							&.input--filled
+								label
+									font-size: 16px
+							input
+								font-size: 18px
+								margin-bottom: 30px
+								padding-top: 20px
+							&[type=checkbox]+label
+								float: left
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
-
+@media only screen and (max-width : 1279px)
+	.mouse
+		display: none
+	.social
+		position: absolute
+		bottom: 30px
+	#fullpage
+		.section
+			padding-top: 100px
+		#sect-1
+			padding-top: 150px
+			.col-lg-6
+				padding-left: 30px
+			h2
+				line-height: 60px
+			h4
+				margin-top: 10px
+			h5
+				margin-bottom: 16px
+			p
+				width: 62%
+			a
+				margin-top: 20px
+		#sect-2
+			background-color: #F5F9FE
+			padding-top: 50px
+			padding-bottom: 60px
+			margin-top: 104px
+			h2
+				font-size: 60px
+				font-weight: bold
+				margin-bottom: 15px
+			.col-md-4
+				&:first-of-type
+					padding-left: 0
+				&:nth-of-type(2)
+					padding-right: 0
+				&:last-of-type
+					padding-right: 0
+					padding-left: 0
+					.item
+						padding-bottom: 3px
+						.img-box
+							height: 70px
+				h4
+					font-size: 18px
+					margin-bottom: 17px
+				.item
+					height: 370px
+					background-color: #FFF
+					padding: 15px 20px 0
+					.img-box
+						height: 90px
+						img
+							display: block
+							margin-left: auto
+							margin-right: auto
+			.col-sm-12
+				padding-top: 20px
+				h4
+					margin-top: 18px
+				.item
+					height: auto
+					padding-bottom: 20px
+					p
+						span
+							padding-top: 30px
+							display: inline-block
+		#sect-3
+			background: none
+			padding-top: 77px
+			h2
+				margin-bottom: 37px
+				font-size: 60px
+				font-weight: bold
+			.popup
+				&.indi, &.manager, &.power, &.win
+					position: relative
+					width: auto
+					height: auto
+					left: auto
+					right: auto
+					top: auto
+					bottom: auto
+					box-shadow: none
+					background-color: #FFF
+					padding-bottom: 19px
+					&:after
+						content: ""
+						z-index: -1
+						position: absolute
+						width: 100%
+						height: 100%
+						top: 0
+						left: 0
+						background-color: rgba(#2F80ED, 0.15)
+						filter: blur(10px)
+					&:before
+						content: none
+				&.manager
+					padding-bottom: 43px
+		#sect-4
+			padding-top: 59px
+			h2
+				white-space: normal
+				font-size: 60px
+				span
+					white-space: nowrap
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
