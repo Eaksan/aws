@@ -1,0 +1,12 @@
+<svg width="19" height="18" viewBox="0 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Polygon 4</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(542 1558)">
+<g id="Polygon 4">
+<use xlink:href="#path0_fill" transform="translate(-546 -1561)" fill="#f7f7f7"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 10.9019 4.5C 12.0566 2.5 14.9434 2.5 16.0981 4.5L 22.5933 15.75C 23.748 17.75 22.3046 20.25 19.9952 20.25L 7.00481 20.25C 4.69541 20.25 3.25203 17.75 4.40673 15.75L 10.9019 4.5Z"/>
+</defs>
+</svg>

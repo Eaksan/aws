@@ -10,20 +10,30 @@
 		bottom: 40px
 	.social
 		bottom: 15px
-
+		left: 0
+	header
+		box-shadow: none
+		.navbar
+			height: 75px
+			.navbar-header
+				.navbar-brand
+					padding-top: 10px
+				.navbar-toggle
+					margin-top: 0
 	#fullpage
 		.registration
 			bottom: 26px
 		.section
-			padding-top: 110px
+			padding-top: 90px
 			h2
 				white-space: nowrap
 				width: auto
 				z-index: 100
 		#sect-1
 			background: #FFF
+			padding-top: 100px
 			h4
-				margin-top: 120px
+				margin-top: 40px
 			.col-lg-6
 				.path
 					top: 715px
@@ -56,7 +66,7 @@
 						font-size: 16px
 		#sect-3
 			background-image: url("../img/3bg1280.png")
-			background-position: center 310px
+			background-position: center 290px
 			h2
 				margin-bottom: 0
 			.popup
@@ -97,6 +107,30 @@
 				height: auto
 				margin-bottom: 80px
 			.col-md-6
+				.img-box
+					svg
+						top: 40px
+						right: 25px
+						width: 370px
+					img
+						max-width: 100%
+						height: auto
+						&.money
+							&:nth-of-type(2)
+								top: 143px
+								left: 77px
+							&:nth-of-type(3)
+								top: 113px
+								left: 217px						
+							&:nth-of-type(4)
+								top: 95px
+								left: 320px
+							&:nth-of-type(5)
+								top: 34px
+								left: 373px
+							&:nth-of-type(6)
+								top: 18px
+								left: 420px
 				&:last-of-type
 					img
 						top: 47px
@@ -143,12 +177,12 @@
 					bottom: 37px
 					left: 107px
 		#sect-6
-			padding-top: 110px
-			.col-sm-6
+			padding-top: 75px
+			.col-md-6
 				h3
 					font-size: 42px
 					line-height: 42px
-					margin-top: 49px
+					margin-top: 20px
 					margin-bottom: 44px
 				.white-box
 					margin-left: 19px
@@ -166,10 +200,10 @@
 					h3
 						margin-bottom: 24px
 		#sect-7
-			.col-sm-6
-				height: 600px
+			.col-md-6
+				height: auto
 				h3
-					margin-top: 40px
+					margin-top: 15px
 					font-size: 42px
 					line-height: 42px
 				p
@@ -195,6 +229,8 @@
 								padding-top: 20px
 							&[type=checkbox]+label
 								float: left
+				.promo
+					margin-top: 0
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1279px)
 	.mouse
@@ -202,9 +238,18 @@
 	.social
 		position: absolute
 		bottom: 30px
+		width: 100%
+		text-align: center
+		ul
+			display: block
+			li
+				&:last-child
+					padding: 0
 	#fullpage
 		.section
 			padding-top: 100px
+			.registration
+				display: none
 		#sect-1
 			padding-top: 150px
 			.col-lg-6
@@ -302,18 +347,475 @@
 			h2
 				white-space: normal
 				font-size: 60px
+				margin-bottom: 43px
 				span
 					white-space: nowrap
+			h4
+				font-weight: bold
+				span
+					margin-top: 5px
+			.col-md-6
+				.img-box
+					width: 490px
+					height: auto
+					margin-left: auto
+					margin-right: auto
+					svg
+						top: 52px
+						right: 51px
+					img
+						&.money
+							&:nth-of-type(2)
+								top: 155px
+							&:nth-of-type(3)
+								top: 125px					
+							&:nth-of-type(4)
+								top: 107px
+							&:nth-of-type(5)
+								top: 47px
+							&:nth-of-type(6)
+								top: 31px
+				&:last-of-type
+					padding-top: 30px
+					img
+						width: 233px
+						height: 233px
+						display: block
+						top: 0
+						left: auto
+						margin-left: auto
+						margin-right: auto
+					p
+						line-height: 29px
+						&:first-of-type
+							left: 0
+							top: 41px
+							&:after
+								width: 285px
+								left: -10px
+								background-image: url("../img/blue-line1768.png")
+						&:last-of-type
+							top: 288px
+							&:after
+								right: -4px
+								top: -82px
+								width: 361px
+								background-image: url("../img/blue-line2768.png")
+		#sect-5
+			padding-top: 162px
+			h2
+				font-size: 60px
+				font-weight: bold
+			.slider-first
+				padding-top: 60px
+				padding-bottom: 115px
+				.dots
+					display: none
+				.navigation
+					right: 49px
+					left: auto
+					top: 206px
+					bottom: auto
+					.slider-prev
+						display: none
+				.easlide
+					.col-lg-6
+						position: static
+						.img-box
+							margin: 0 24px
+							width: 212px
+							height: 114px
+							a:before
+								top: 43%
+								left: 45%
+						p
+							position: absolute
+							width: 700px
+							right: 30px
+							line-height: 25px
+							top: 347px
+							padding: 0
+		#sect-6
+			.col-md-6
+				h3
+					font-size: 60px
+					line-height: 60px
+					font-weight: bold
+					margin-top: 41px
+					margin-bottom: 18px
+				&:last-of-type
+					h3
+						margin-top: 54px
+				.white-box
+					margin: 0 147px 49px
+					padding-top: 32px
+					p
+						line-height: 18px
+						padding-top: 29px
+				a
+					padding: 18px 52px
+		#sect-7
+			padding-top: 50px
+			.col-md-6
+				height: auto
+				h3
+					font-size: 60px
+					line-height: 60px
+					margin-top: 32px
+				p
+					padding: 0 130px
+				.promo
+					margin-top: 9px
+				&:last-child
+					margin-top: 61px
+					padding-bottom: 130px
+					&:after
+						left: -200%
+						width: 500%
+						z-index: -1
+					form
+						padding: 0	196px
+						h3
+							margin-top: 28px
+							margin-bottom: 20px
+						select, .jq-selectbox
+							margin-bottom: 28px
+						.input--nariko
+							input
+								padding-top: 10px
+								margin-bottom: 26px
+						input[type=checkbox]+label
+							margin-top: 10px
+							margin-bottom: 40px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
-
-
+	#fullpage
+		text-align: center !important
+		.section
+			h2
+				font-size: 42px !important
+				line-height: 42px !important
+				margin-bottom: 28px
+		#sect-1
+			.col-lg-6
+				padding-left: 16px
+			h2:after
+				left: 40%
+				bottom: -13px
+			p
+				width: 100%
+				padding: 0 5px
+			a
+				margin-top: 26px
+		#sect-2
+			margin-top: 34px
+			padding-bottom: 20px
+			.col-md-4
+				&:first-of-type
+					padding-left: 15px
+				&:nth-of-type(2)
+					padding-right: 15px
+				.item
+					padding-top: 22px
+					height: auto
+					p
+						text-align: center
+						padding-bottom: 23px
+				h4
+					margin-top: 15px
+					margin-bottom: 19px
+			.col-sm-12
+				.item
+					p
+						padding-bottom: 0
+						span
+							width: 100%
+							padding-top: 0
+		#sect-3
+			padding-top: 27px
+			h2
+				margin-bottom: 42px
+			.popup
+				&.indi, &.manager, &.power, &.win
+					padding-bottom: 5px
+					padding-left: 5px
+					padding-right: 5px
+					&:after
+						content: none
+				h4
+					margin-bottom: 20px
+		#sect-4
+			padding-top: 98px
+			.col-md-6
+				padding-left: 0
+				padding-right: 0
+				.img-box
+					width: auto
+				&:last-of-type
+					p:first-of-type
+						text-align: left
+						&:after
+							background-image: url("../img/blue-line1-480.png")
+				&:last-of-type
+					p:last-of-type
+						&:after
+							width: 232px
+							background-image: url("../img/blue-line2-480.png")
+		#sect-5
+			h2
+				font-size: 60px !important
+				line-height: 60px !important
+			.slider-first
+				padding-top: 49px
+				.navigation
+					top: 356px
+					right: 59px
+					button
+						border-color: #ccc
+				.easlide
+					.col-lg-6
+						.vshadow
+							display: none
+						iframe
+							width: 469px
+							height: 253px
+							margin-left: auto
+							margin-right: auto
+						p
+							position: static
+							width: 469px
+							top: auto
+							right: auto
+							text-align: left
+							margin-left: auto
+							margin-right: auto
+							margin-top: 25px
+						.img-box
+							width: 469px
+							margin-left: auto
+							margin-right: auto
+							margin-top: 13px
+							a
+								display: block
+								width: 211px
+								margin-left: 10px
+							&.shadow:after
+								width: 211px
+		#sect-6
+			padding-top: 8px
+			.col-md-6
+				h3
+					font-size: 42px
+					line-height: 42px
+					margin-top: 18px
+					margin-bottom: 31px
+				&:last-of-type h3
+					margin-top: 65px
+					margin-bottom: 0
+				.white-box
+					margin: 10px auto 0
+					width: 470px
+					padding-bottom: 5px
+					p
+						padding-top: 25px
+				a
+					margin-top: 29px
+		#sect-7
+			.col-md-6
+				h3
+					font-size: 42px
+					line-height: 42px
+					margin-top: 44px
+				p
+					padding: 0 5px
+					margin-top: 28px
+					line-height: 22px
+					font-weight: bold
+					margin-bottom: 10px
+				&:last-child
+					margin-top: 37px
+					form
+						margin: 0 auto
+						width: 340px
+						padding: 0
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	header
+		height: 100px
+		.navbar .navbar-header .navbar-toggle
+			padding: 13px
+			height: 50px
+			margin-top: 24px
+	#fullpage
+		text-align: center !important
+		.section
+			h2
+				font-size: 35px !important
+				line-height: 35px !important
+				margin-bottom: 28px
+	#fullpage 
+		.section
+			h2
+				white-space: normal
+		#sect-1
+			h2
+				&:after
+					left: 34%
+					bottom: -17px
+			h5
+				font-size: 25px
+				line-height: 25px
+				margin-top: 10px
+			h4
+				font-size: 25px
+				line-height: 25px
+				margin-bottom: 5px
+			a
+				margin-top: 5px
+		#sect-2
+			padding-top: 10px
+			.col-md-4
+				padding-left: 0 !important
+				padding-right: 0 !important
+				padding-top: 17px
+				.item
+					p
+						margin-bottom: 0
 
+					.img-box
+						height: 82px
+		#sect-3
+			h2
+				font-size: 42px !important
+				line-height: 42px !important
+				margin-bottom: 11px
+		#sect-4
+			padding-top: 24px
+			h2
+				font-size: 42px!important
+				line-height: 42px!important
+				margin-bottom: 10px
+			.col-md-6
+				.img-box
+					padding-left: 23px
+					padding-right: 23px
+				h4
+					margin-top: 24px
+					span
+						margin-top: 0
+				&:last-of-type
+					p
+						&:first-of-type, &:last-of-type
+							text-align: center
+							position: relative
+							margin-left: auto
+							margin-right: auto
+							top: auto
+							left: auto
+							right: auto
+							bottom: auto
+						&:first-of-type
+							top: -179px
+							&:after
+								background-image: url("../img/blue-line1-320.png")
+								width: 150px
+								left: 19px
+								bottom: -63px
+						&:last-of-type
+							&:after
+								background-image: url("../img/blue-line2-320.png")
+								width: 185px
+								right: 0
+								top: -49px
+					img
+						width: 168px
+						height: 168px
+						top: 81px
+		#sect-5
+			padding-top: 16px
+			h2
+				font-size: 42px!important
+				line-height: 42px!important
+			.slider-first
+				padding-top: 35px
+				padding-bottom: 78px
+				.navigation
+					position: static
+					top: auto
+					bottom: auto
+					right: auto
+					text-align: center
+					left: auto
+					button
+						border-color: #ccc
+				.easlide
+					.col-lg-6
+						.vshadow
+							display: none
+						iframe
+							width: 307px
+							height: 166px
+							margin-left: auto
+							margin-right: auto
+						p
+							position: static
+							width: 307px
+							top: auto
+							right: auto
+							text-align: left
+							margin-left: auto
+							margin-right: auto
+							margin-top: 25px
+						.img-box
+							width: 307px
+							margin-left: auto
+							margin-right: auto
+							margin-top: 13px
+							a
+								display: block
+								width: 218px
+								margin-left: auto
+								margin-right: auto
+							&.shadow:after
+								width: 211px
+		#sect-6
+			.col-md-6
+				.white-box
+					width: 310px
+					padding-top: 11px
+				h3
+					font-size: 35px
+					line-height: 35px
+					margin-top: 8px
+					margin-bottom: 22px
+				&:last-of-type
+					h3
+						font-size: 42px
+						line-height: 42px
+						margin-top: 5px
+				&:first-of-type
+					margin-bottom: 20px
+					img
+						margin-bottom: 10px
+		#sect-7
+			padding-top: 0
+			.col-md-6
+				p
+					margin-top: 15px
+				.promo
+					width: 100%
+					padding: 13px
+					img
+						width: 100%
+				&:last-child
+					form
+						h3
+							margin-top: 23px
+							margin-bottom: 4px
+						width: 310px
+						.jq-selectbox.land.br, ul li.land.br
+							margin-top: 15px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

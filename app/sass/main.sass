@@ -7,12 +7,12 @@
 	0%
 		transform: rotate(0deg)
 	100%
-		transform: rotate(225deg)
+		transform: rotate(225deg) translateY(-1px) translateX(-2.5px)
 @keyframes navtoggle2
 	0%
 		transform: rotate(0deg)
 	100%
-		transform: rotate(315deg) translateY(-5px) translateX(4px)
+		transform: rotate(315deg) translateY(-2.5px) translateX(3.5px)
 @keyframes sliderRightOn 
 	0%
 		transform: translateX(640px)
@@ -45,9 +45,46 @@
 		opacity: 1
 @keyframes graf
 	0%
-		stroke-dashoffset: 1025
+		stroke-dashoffset: 1695
 	100%
-		stroke-dashoffset: 580
+		stroke-dashoffset: 500
+@keyframes money
+	0%
+		transform: translateY(10px)
+		opacity: 0
+	70%
+		transform: translateY(-5px)
+	100%
+		transform: translateY(0px)
+		opacity: 1
+@keyframes sliderLeftOn 
+	0%
+		transform: translateX(-640px)
+		opacity: 0
+	100%
+		transform: translateX(0)
+		opacity: 1
+@keyframes sliderRightOn 
+	0%
+		transform: translateX(640px)
+		opacity: 0
+	100%
+		transform: translateX(0)
+		opacity: 1
+@keyframes sliderLeftOff 
+	0%
+		transform: translateX(0)
+		opacity: 1
+	100%
+		transform: translateX(-640px)
+		opacity: 0
+@keyframes sliderRightOff 
+	0%
+		transform: translateX(0)
+		opacity: 1
+	100%
+		transform: translateX(640px)
+		opacity: 0
 
 
 *::-webkit-input-placeholder
@@ -200,9 +237,9 @@ header
 							color: $red
 							background-color: transparent
 					.dropdown-menu
-						background-color: #f2f2f2
+						background-color: #F7F7F7
 						border: none
-						padding: 42px 0
+						padding: 38px 0
 						border-radius: 0
 						a
 							display: block
@@ -235,23 +272,26 @@ header
 	.navbar
 		margin-bottom: 0
 		border: none
+		height: 110px
 		.navbar-header
 			width: 100%
 			.navbar-toggle
 				display: block
 				margin-right: -17px
-				margin-top: 0
+				margin-top: 17.5px
 				margin-bottom: 0
-				padding: 47px 43px
+				padding: 26px 25.5px
 				border-radius: 0
-				border: 1px solid #ccc
-				height: 110px
+				height: 75px
+				border-radius: 100%
+				background-color: #F7F7F7
 				.icon-bar
 					background-color: #2d2d2d
 					&:last-child
 						width: 70%
 
 				&.opened
+					box-shadow: 0 4px 10px rgba(#000, 0.15)
 					.icon-bar
 						&:nth-child(2)
 							animation: navtoggle 0.5s forwards
@@ -262,18 +302,29 @@ header
 							display: none
 			.navbar-brand
 				padding-left: 20px
+		.navbar-collapse.in, .navbar-collapse.collapsing
+			&:before
+				content: ""
+				position: absolute
+				top: -15px
+				right: 20px
+				width: 30px
+				height: 30px
+				background: url("../img/menuangle.svg") 0 0 no-repeat
 		.navbar-collapse.collapse, .navbar-collapse.collapsing
 			position: absolute
 			top: 110px
 			right: 0
-			width: 300px
+			width: 317px
 			margin: 0
-			padding: 22px 0 0
-			background-color: #f2f2f2
+			padding: 0
+			background-color: #f7f7f7
 			z-index: 1000
+			box-shadow: 0 4px 10px rgba(#000, 0.15)
+			border-radius: 5px
 			.navbar-nav
 				width: 100%
-				background-color: #f2f2f2
+				background-color: #f7f7f7
 				display: block
 				left: auto
 				&.navbar-right
@@ -284,15 +335,19 @@ header
 					display: block
 					float: none
 					padding: 9px 0 9px 0
-					border-bottom: 1px solid #ccc
+					
 					a
-						padding-left: 40px
+						margin-left: 38px
+						margin-right: 37px
+						border-bottom: 1px solid #ccc
 						img
 							display: none
+					&:last-child a
+						border: none
 					&.dropdown
 						padding:  9px 0 0
 						& > a
-							padding-left: 40px
+							margin-left: 40px
 							padding-bottom: 9px
 						.dropdown-menu
 							position: relative
@@ -301,7 +356,7 @@ header
 							float: none
 							left: 0
 							top: 0
-							background-color: #e6e6e6
+							background-color: #e5e5e5
 							box-shadow: none
 							box-shadow: inset 0 0 5px rgba(#000, 0.15)
 							h3
@@ -317,6 +372,7 @@ header
 								margin: 0
 								border: none
 							a
+								border: none
 								&:hover, &:focus
 									h3
 										color: $red
@@ -391,6 +447,7 @@ header
 				span
 					width: 40px
 					border-radius: 0
+					transition: 0.7s
 					height: 2px
 					background-color: #999
 					left: auto
@@ -409,6 +466,7 @@ header
 						width: 80px
 						height: 2px
 						background-color: $red
+						border-radius: 0
 			&:last-child
 				span
 					width: 20px
@@ -421,6 +479,10 @@ header
 			display: inline-block
 		img
 			display: inline-block
+			padding: 0 20px
+		a
+			img
+				padding: 0
 	.section
 		padding-top: 150px
 		h2
@@ -429,7 +491,7 @@ header
 			margin-top: 0
 			margin-bottom: 70px
 			font-style: normal
-			font-weight: normal
+			font-weight: bold
 			font-size: 80px
 			line-height: 100%
 			span
@@ -446,10 +508,10 @@ header
 				border-bottom: 1px solid $red
 		h4
 			font-family: $bebas
-			font-style: normal;
-			font-weight: normal;
-			font-size: 30px;
-			line-height: 100%;
+			font-style: normal
+			font-weight: normal
+			font-size: 30px
+			line-height: 100%
 			color: #CCCCCC
 			margin-top: 205px
 			margin-bottom: 0
@@ -459,10 +521,13 @@ header
 			font-size: 30px
 			margin-top: 0
 			color: $blue
+			font-weight: bold
 			display: inline-block
 			font-family: $bebas
 			span
 				color: $red
+		p
+			font-size: 18px
 		a
 			position: relative
 			background: linear-gradient(180deg, #F97A7D 0%, #A22A51 183.33%)
@@ -473,7 +538,6 @@ header
 			line-height: 100%
 			color: #FFFFFF
 			display: inline-block
-
 			&:after
 				position: absolute
 				content: ""
@@ -508,12 +572,11 @@ header
 				top: 600px
 				left: 1065px
 	#sect-2
-		background: url("../img/Rectangle 8.svg") no-repeat 0 435px
+		background: url("../img/Rectangle 8.svg") repeat-x 0 435px
 		h2
 			font-family: $bebas
 			text-align: center
 			font-style: normal
-			font-weight: normal
 			font-size: 80px
 			line-height: 100%
 			text-transform: uppercase
@@ -550,6 +613,7 @@ header
 				margin-bottom: 24px
 				text-transform: uppercase
 				letter-spacing: 3.1px
+				color: $blue
 			p
 				font-style: normal
 				font-weight: normal
@@ -559,6 +623,8 @@ header
 				color: #333333
 				span
 					vertical-align: bottom
+					display: inline-block
+					color: #999999
 	#sect-3
 		background: url("../img/3bg.svg") center 235px no-repeat
 		h2
@@ -660,13 +726,69 @@ header
 		h2
 			height: 150px
 			text-align: center
-			font-weight: bold
 		.col-md-6
 			color: $blue
 			.img-box
-				background: #FFFFFF
 				box-shadow: 0px 15px 50px rgba(47, 128, 237, 0.15)
 				border-radius: 5px
+				position: relative
+				svg
+					position: absolute
+					top: 57px
+					right: 60px
+					width: 580px
+					height: auto
+				.cls-1
+					fill: none
+					position: absolute
+					stroke-width: 2
+					stroke-miterlimit: 1000
+					stroke-dasharray: 1695
+					z-index: 15
+					stroke-dashoffset: 1695
+				img
+					position: relative
+					left: 0
+					top: 0
+					max-width: 100%
+					height: auto
+					z-index: -1
+					&.money
+						position: absolute
+						opacity: 0
+						z-index: 20
+						&:nth-of-type(2)
+							top: 232px
+							left: 103px
+						&:nth-of-type(3)
+							top: 184px
+							left: 330px						
+						&:nth-of-type(4)
+							top: 157px
+							left: 493px
+						&:nth-of-type(5)
+							top: 60px
+							left: 573px
+						&:nth-of-type(6)
+							top: 37px
+							left: 640px
+				&.show-anim
+					.cls-1
+						animation: graf 3s linear forwards
+						animation-delay: 0.2s
+					img.money
+						animation: money 0.3s forwards
+						&:nth-of-type(2)
+							animation-delay: 0.3s
+						&:nth-of-type(3)					
+							animation-delay: 1.2s
+						&:nth-of-type(4)
+							animation-delay: 1.7s
+						&:nth-of-type(5)
+							animation-delay: 2.0s
+						&:nth-of-type(6)
+							animation-delay: 2.2s
+
 			h4
 				text-align: center
 				font-size: 25px
@@ -687,6 +809,7 @@ header
 					position: absolute
 					font-size: 25px
 					line-height: 25px
+					font-weight: bold
 					&:after
 						content: ""
 						position: absolute
@@ -724,10 +847,10 @@ header
 				position: absolute
 			.dots
 				bottom: 10px
-				left: 100px
+				left: 370px
 				ul
 					list-style: none
-					margin: 0
+					margin: 0 0 0 -50%
 					padding: 0
 					li
 						font-size: 0
@@ -767,6 +890,22 @@ header
 					svg
 						padding: 0 10px
 			.easlide
+				opacity: 0
+				transition: 0.4s
+				&.current-slide
+					opacity: 1
+					iframe, .vshadow
+						animation: sliderLeftOn 1s forwards
+						animation-delay: 1s
+					.img-box, .info
+						animation: sliderRightOn 1s forwards
+						animation-delay: 1s
+				&.slide-back
+					opacity: 1
+					iframe, .vshadow
+						animation: sliderLeftOff 1s forwards
+					.img-box, .info
+						animation: sliderRightOff 1s forwards
 				.col-lg-6
 					iframe, .vshadow
 						height: 403px
@@ -806,10 +945,11 @@ header
 						padding-left: 67px
 						padding-top: 65px
 						color: #333
+						
 	#sect-6
 		text-align: center
 		padding-top: 150px
-		.col-sm-6
+		.col-md-6
 			h3
 				font-family: $bebas
 				color: $blue
@@ -857,7 +997,7 @@ header
 					margin-top: 35px
 	#sect-7
 		overflow-x: hidden
-		.col-sm-6
+		.col-md-6
 			text-align: center
 			height: 700px
 			h3
@@ -866,6 +1006,7 @@ header
 				color: $blue
 				line-height: 60px
 				margin-top: 110px
+				font-weight: bold
 			p
 				color: #666
 				font-size: 18px
@@ -878,6 +1019,7 @@ header
 				margin-left: auto
 				margin-right: auto
 				perspective: 800px
+				margin-top: 40px
 				&:after
 					content: ""
 					position: absolute
@@ -963,9 +1105,10 @@ header
 						display: inline-block
 						.jq-selectbox__trigger-arrow
 							display: inline-block
-							width: 7px
+							width: 12px
 							height: 10px
-							margin-left: 10px
+							margin-left: 20px
+							margin-right: 20px
 							transition: 0.2s
 							background: url("../img/icon/select-arrow.png") 0 3px no-repeat
 					ul
@@ -974,7 +1117,7 @@ header
 						display: block
 						width: 100%
 					ul li, .jq-selectbox__select
-						padding: 10px 5px 10px 40px
+						padding: 10px 5px 8px 60px
 						background-color: transparent
 					ul li, .jq-selectbox
 						background-color: transparent
@@ -983,11 +1126,11 @@ header
 							background-position: 10px center
 							display: block
 							&.br
-								background-image: url("../img/icon/flag-br.jpg") 
+								background-image: url("../img/icon/flag-br.png")
 							&.ru
-								background-image: url("../img/icon/flag-ru.jpg") 
+								background-image: url("../img/icon/flag-ru.png") 
 							&.kz
-								background-image: url("../img/icon/flag-kz.jpg") 
+								background-image: url("../img/icon/flag-kz.png") 
 							&.ua
 								background-image: url("../img/icon/flag-ua.png")
 					.input--nariko
@@ -1047,6 +1190,7 @@ header
 								font-size: 18px
 								cursor: default
 								transform: translateY(-20px)
+								opacity: 0.8
 					input[type="checkbox"]
 						display: none
 						& + label
