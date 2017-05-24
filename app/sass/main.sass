@@ -162,11 +162,9 @@ body
 	max-width: 100%
 	height: auto
 header
-	box-shadow: 0 6px 10px rgba(#000, 0.1)
 	position: fixed
 	width: 100%
 	top: 0
-	background-color: #FFF
 	z-index: 10000
 	.navbar
 		.navbar-header
@@ -591,12 +589,17 @@ header
 		.col-md-4
 			text-align: center
 			padding-top: 24px
+			&>img
+				position: absolute
+				top: 30px
+				left: 40px
+				opacity: 0
 			.item
-				box-shadow: 0 0 10px #ccc
 				background-color: #FFF
 				margin: 0 47.5px
 				padding: 22px 25px 28px 25px
 				height: 458px
+				opacity: 0
 			.img-box
 				height: 93px
 				display: inline-block
@@ -625,6 +628,14 @@ header
 					vertical-align: bottom
 					display: inline-block
 					color: #999999
+			&.show-anim
+				.item, &>img
+					animation: sliderLeftOn 1s forwards
+					animation-delay: 0
+				&:nth-child(3) .item, &:nth-child(3)>img
+					animation-delay: 0.5s
+				&:nth-child(4) .item, &:nth-child(4)>img
+					animation-delay: 1s
 	#sect-3
 		background: url("../img/3bg.svg") center 235px no-repeat
 		h2
@@ -813,15 +824,16 @@ header
 					&:after
 						content: ""
 						position: absolute
+						transition: width 2s
+						width: 0
 					&:first-of-type
 						max-width: 200px
 						top: 56px
 						left: 39px
 						&:after
-							width: 231px
 							height: 61px
-							background: url("../img/line-blue-1.svg") 0 0 no-repeat
-							left: -4px
+							background: url("../img/line-blue-1.svg") right 0 no-repeat
+							right: -30px
 							bottom: -75px
 					&:last-child
 						max-width: 250px
@@ -829,11 +841,15 @@ header
 						right: 60px
 						text-align: right
 						&:after
-							width: 275px
 							height: 70px
-							background: url("../img/line-blue-2.svg") 0 0 no-repeat
-							right: 0
+							background: url("../img/line-blue-2.svg") left 0 no-repeat
+							left: -25px
 							top: -65px
+				&.show-anim p
+					&:first-of-type:after
+						width: 231px
+					&:last-child:after
+						width: 285px
 	#sect-5
 		h2
 			text-align: center
@@ -872,7 +888,7 @@ header
 								background-color: $red
 								width: 17px
 			.navigation
-				top: 10px
+				top: 45px
 				right: 0
 				color: #000
 				button
@@ -898,14 +914,15 @@ header
 						animation: sliderLeftOn 1s forwards
 						animation-delay: 1s
 					.img-box, .info
-						animation: sliderRightOn 1s forwards
-						animation-delay: 1s
+						opacity: 0
+						animation: sliderLeftOn 1s forwards
+						animation-delay: 1.3s
 				&.slide-back
 					opacity: 1
 					iframe, .vshadow
 						animation: sliderLeftOff 1s forwards
 					.img-box, .info
-						animation: sliderRightOff 1s forwards
+						animation: sliderLeftOff 1s forwards
 				.col-lg-6
 					iframe, .vshadow
 						height: 403px

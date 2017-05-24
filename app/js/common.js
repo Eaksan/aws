@@ -172,11 +172,8 @@ $(function() {
     return false;
   });
   // позиция меню
-  if ( $(window).width() < 1248 ) {
-    navbarPosition();
-  };
   $(window).resize(function(){
-    if ( $(window).width() < 768 ) {
+    if ( $(window).width() > 768 && $(window).width() < 1248 ) {
       navbarPosition();
     };
   });
@@ -227,8 +224,12 @@ $(function() {
         var loadedSection = $(this);
 
         //using anchorLink
+        if(anchorLink == 'sec-2'){
+          $("#sect-2 .col-md-4").addClass("show-anim");
+        };
         if(anchorLink == 'sec-4'){
           $("#sect-4 .img-box").addClass("show-anim");
+          $("#sect-4 .col-md-6").addClass("show-anim");
         };
         if(anchorLink == 'sec-7'){
           $(".promo").addClass("show-anim");

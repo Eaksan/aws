@@ -55,6 +55,11 @@
 			h2
 				margin-bottom: 45px
 			.col-md-4
+				&>img
+					width: 100%
+					height: 100%
+					top: 55px
+					left: 35px
 				.item
 					margin: 0
 					padding: 20px 10px 0
@@ -143,7 +148,7 @@
 							top: 0
 							&:after
 								background-image: url("../img/line-blue-1-1280.svg")
-								left: -4px
+								right: 38px
 								bottom: -70px
 						&:last-child
 							right: 10px
@@ -151,7 +156,7 @@
 							&:after
 								background-image: url("../img/line-blue-2-1280.svg")
 								height: 81px
-								right: -31px
+								left: 6px
 								top: -82px
 		#sect-5
 			.slider-first 
@@ -233,6 +238,8 @@
 					margin-top: 0
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1279px)
+	header
+		position: static
 	.mouse
 		display: none
 	.social
@@ -292,6 +299,7 @@
 					height: 370px
 					background-color: #FFF
 					padding: 15px 20px 0
+					opacity: 1
 					.img-box
 						height: 90px
 						img
@@ -393,11 +401,13 @@
 							&:after
 								width: 285px
 								left: -10px
+								right: auto
 								background-image: url("../img/blue-line1768.png")
 						&:last-of-type
 							top: 288px
 							&:after
 								right: -4px
+								left: auto
 								top: -82px
 								width: 361px
 								background-image: url("../img/blue-line2768.png")
@@ -489,7 +499,13 @@
 							margin-bottom: 40px
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
+@media only screen and (max-width : 767px)
+	header
+		.navbar
+			.navbar-header
+				.navbar-toggle
+					margin-right: 0
+					margin-left: 0
 	#fullpage
 		text-align: center !important
 		.section
@@ -512,6 +528,8 @@
 			margin-top: 34px
 			padding-bottom: 20px
 			.col-md-4
+				&>img
+					display: none
 				&:first-of-type
 					padding-left: 15px
 				&:nth-of-type(2)
@@ -547,20 +565,26 @@
 					margin-bottom: 20px
 		#sect-4
 			padding-top: 98px
+			.container
+				width: 470px
 			.col-md-6
 				padding-left: 0
 				padding-right: 0
 				.img-box
 					width: auto
+					svg
+						right: 38px
 				&:last-of-type
 					p:first-of-type
 						text-align: left
 						&:after
 							background-image: url("../img/blue-line1-480.png")
+							left: -138px
 				&:last-of-type
 					p:last-of-type
 						&:after
 							width: 232px
+							right: 0
 							background-image: url("../img/blue-line2-480.png")
 		#sect-5
 			h2
@@ -640,9 +664,8 @@
 						width: 340px
 						padding: 0
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
+@media only screen and (max-width : 479px)
 	header
-		height: 100px
 		.navbar .navbar-header .navbar-toggle
 			padding: 13px
 			height: 50px
@@ -659,6 +682,7 @@
 			h2
 				white-space: normal
 		#sect-1
+			padding-top: 40px
 			h2
 				&:after
 					left: 34%
@@ -691,6 +715,10 @@
 				line-height: 42px !important
 				margin-bottom: 11px
 		#sect-4
+			.container
+				width: 310px
+				margin-left: auto
+				margin-right: auto
 			padding-top: 24px
 			h2
 				font-size: 42px!important
@@ -700,6 +728,27 @@
 				.img-box
 					padding-left: 23px
 					padding-right: 23px
+					svg
+						top: 25px
+						right: 40px
+						width: 210px
+					img
+						&.money
+							&:nth-of-type(2)
+								top: 74px
+								left: 60px
+							&:nth-of-type(3)
+								top: 57px
+								left: 141px
+							&:nth-of-type(4)
+								top: 48px
+								left: 195px
+							&:nth-of-type(5)
+								top: 11px
+								left: 228px
+							&:nth-of-type(6)
+								top: 2px
+								left: 255px	
 				h4
 					margin-top: 24px
 					span
@@ -845,6 +894,10 @@
 
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+@media only screen and (min-width : 1260px)
+	.section
+		overflow: hidden
+		&.active, &.fp-completely
+			overflow: visible
+
 
