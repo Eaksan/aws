@@ -161,223 +161,6 @@ body
 	display: block
 	max-width: 100%
 	height: auto
-header
-	position: fixed
-	width: 100%
-	top: 0
-	z-index: 10000
-	.navbar
-		.navbar-header
-			.navbar-brand
-				height: auto
-				padding: 20px 0 0
-		.navbar-collapse
-			.navbar-nav
-				padding-top: 4px
-				&:first-child
-					position: relative
-					left: 40px
-					li
-						padding: 0 23px 0 14px
-						a
-							padding: 0 0 2px 0
-							img
-								padding-right: 8px
-				li
-					a, :not(.dropdomn-menu) a
-						line-height: 40px
-						padding: 0 25px 2px 25px
-						position: relative
-						&:before
-							width: 50%
-							content: ""
-							position: absolute
-							bottom: -3px
-							left: 3px
-							border-bottom: 2px solid transparent
-						&.register
-							background-color: $red
-							color: #fff
-							padding-right: 15px
-							padding-left: 15px
-							&:after
-								content: ""
-								position: absolute
-								bottom: 0px
-								left: 15px
-								height: 1px
-								transition: 0.2s
-								background-color: $red
-								width: 85%
-								box-shadow: 0 0 10px 1px $red
-							&:hover, &:focus
-								background-color: $red
-								color: #fff
-								&:after
-									opacity: 0
-							&:focus
-								box-shadow: inset 0 0 15px rgba(#000, 0.25)
-
-					a:hover, a:focus
-						background-color: transparent
-						color: $red
-				li.active a
-					color: #000
-					&:before
-						border-color: $red
-				&.navbar-right
-					border-left: 1px solid #E5E5E5
-					li
-						&.active
-				.dropdown
-					& > a
-						&:hover, &:focus
-							color: $red
-							background-color: transparent
-					.dropdown-menu
-						background-color: #F7F7F7
-						border: none
-						padding: 38px 0
-						border-radius: 0
-						a
-							display: block
-							padding: 0
-							font-family: $bebas
-							font-weight: bold
-							padding-left: 40px
-						h3
-							font-size: 27px
-							margin-bottom: 0
-							margin-top: 0
-						p
-							font-size: 16px
-							line-height: 20px
-						.col-lg-5, .col-lg-7
-							width: 100%
-							a
-								h3
-									color: #333333
-									transition: 0.2s
-									font-family: $bebas
-									font-weight: bold
-								&:hover,:focus
-									color: #828282
-									h3
-										color: $red
-				.navbar-right
-					float: none
-					margin-right: 0
-	.navbar
-		margin-bottom: 0
-		border: none
-		height: 110px
-		.navbar-header
-			width: 100%
-			.navbar-toggle
-				display: block
-				margin-right: -17px
-				margin-top: 17.5px
-				margin-bottom: 0
-				padding: 26px 25.5px
-				border-radius: 0
-				height: 75px
-				border-radius: 100%
-				background-color: #F7F7F7
-				.icon-bar
-					background-color: #2d2d2d
-					&:last-child
-						width: 70%
-
-				&.opened
-					box-shadow: 0 4px 10px rgba(#000, 0.15)
-					.icon-bar
-						&:nth-child(2)
-							animation: navtoggle 0.5s forwards
-						&:nth-child(3)
-							animation: navtoggle2 0.5s forwards
-							transform: rotate(-45deg) translateY(-10px)
-						&:last-child
-							display: none
-			.navbar-brand
-				padding-left: 20px
-		.navbar-collapse.in, .navbar-collapse.collapsing
-			&:before
-				content: ""
-				position: absolute
-				top: -15px
-				right: 20px
-				width: 30px
-				height: 30px
-				background: url("../img/menuangle.svg") 0 0 no-repeat
-		.navbar-collapse.collapse, .navbar-collapse.collapsing
-			position: absolute
-			top: 110px
-			right: 0
-			width: 317px
-			margin: 0
-			padding: 0
-			background-color: #f7f7f7
-			z-index: 1000
-			box-shadow: 0 4px 10px rgba(#000, 0.15)
-			border-radius: 5px
-			.navbar-nav
-				width: 100%
-				background-color: #f7f7f7
-				display: block
-				left: auto
-				&.navbar-right
-					li
-						&:last-child
-							border: none
-				li
-					display: block
-					float: none
-					padding: 9px 0 9px 0
-					
-					a
-						margin-left: 38px
-						margin-right: 37px
-						border-bottom: 1px solid #ccc
-						img
-							display: none
-					&:last-child a
-						border: none
-					&.dropdown
-						padding:  9px 0 0
-						& > a
-							margin-left: 40px
-							padding-bottom: 9px
-						.dropdown-menu
-							position: relative
-							padding: 0
-							width: 100%
-							float: none
-							left: 0
-							top: 0
-							background-color: #e5e5e5
-							box-shadow: none
-							box-shadow: inset 0 0 5px rgba(#000, 0.15)
-							h3
-								line-height: 45px
-								font-weight: bold
-								color: #000
-							p
-								display: none
-							&:after
-								content: none
-							.col-lg-5, .col-lg-7
-								padding: 0
-								margin: 0
-								border: none
-							a
-								border: none
-								&:hover, &:focus
-									h3
-										color: $red
-
-					&.active
-						a:before
-							content: none
 .social
 	position: fixed
 	bottom: 44px
@@ -482,7 +265,7 @@ header
 			img
 				padding: 0
 	.section
-		padding-top: 150px
+		padding-top: 90px
 		h2
 			color: $blue
 			position: relative
@@ -555,19 +338,19 @@ header
 				position: absolute
 				animation: card 1.2s forwards
 			.ace	
-				top: 800px
+				top: 840px
 				left: 1225px
 				animation-delay: 0.5s
 			.king
-				top: 890px
+				top: 930px
 				left: 1355px
 				animation-delay: 1s
 			.queen
-				top: 990px
+				top: 1030px
 				right: -1150px
 				animation-delay: 1.5s
 			.path
-				top: 600px
+				top: 640px
 				left: 1065px
 	#sect-2
 		background: url("../img/Rectangle 8.svg") repeat-x 0 435px
@@ -1136,6 +919,7 @@ header
 					ul li, .jq-selectbox__select
 						padding: 10px 5px 8px 60px
 						background-color: transparent
+						cursor: pointer
 					ul li, .jq-selectbox
 						background-color: transparent
 						&.land

@@ -162,15 +162,28 @@ $(function() {
 
   // колорбокс
   $(".colorbox").colorbox();
+
   // плавный скрол
   $("a.scrollto").click(function() {
-    var elementClick = $(this).attr("href")
-    var destination = $(elementClick).offset().top;
-    jQuery("html:not(:animated),body:not(:animated)").animate({
-      scrollTop: destination
-    }, 800);
-    return false;
+    if( $(window).width() > 1262 ) {
+      $("#fullpage").fullpage.moveTo('sec-7');
+      setTimeout(function() {
+        $("#input-1").focus();
+      }, 800);
+      return false;
+    } else {
+      var elementClick = $(this).attr("href")
+      var destination = $(elementClick).offset().top;
+      jQuery("html:not(:animated),body:not(:animated)").animate({
+        scrollTop: destination
+      }, 800);
+      setTimeout(function() {
+        $("#input-1").focus();
+      }, 800);
+      return false;
+    };
   });
+
   // позиция меню
   $(window).resize(function(){
     if ( $(window).width() > 768 && $(window).width() < 1248 ) {
@@ -213,6 +226,7 @@ $(function() {
 	$('[data-toggle="tooltip"]').tooltip()
 	// Fullpage активация
 	if( $(window).width() > 1262 ) {
+
     $("#fullpage").fullpage({
   		verticalCentered: false,
   		menu: "header",
