@@ -1,0 +1,12 @@
+<svg width="22" height="21" viewBox="0 0 22 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Hearts</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-345 -4918)" figma:type="canvas">
+<g id="Hearts" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(345 4918)" fill="#FF3333"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 11 20.8712C 16.976 16.6026 19.9166 12.666 21.3395 9.67797C 22.9521 6.16823 21.5292 1.8522 17.9721 0.429329C 13.7509 -1.27811 11 2.65849 11 2.65849C 11 2.65849 8.20169 -1.27811 4.02794 0.429329C 0.470773 1.8522 -0.952096 6.16823 0.660489 9.67797C 2.08336 12.666 5.02395 16.6026 11 20.8712Z"/>
+</defs>
+</svg>

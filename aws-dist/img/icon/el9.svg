@@ -1,0 +1,12 @@
+<svg width="29" height="29" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>el9</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1622 -360)">
+<g id="el9">
+<use xlink:href="#el9" transform="translate(1622 360)" fill="#F4D34F"/>
+</g>
+</g>
+<defs>
+<path id="el9" d="M 29 14.5C 29 22.5081 22.5081 29 14.5 29C 6.49187 29 0 22.5081 0 14.5C 0 6.49187 6.49187 0 14.5 0C 22.5081 0 29 6.49187 29 14.5Z"/>
+</defs>
+</svg>

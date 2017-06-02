@@ -1,0 +1,36 @@
+<svg width="247" height="81" viewBox="0 0 247 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>line-blue-2-1280</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-3054 -2674)">
+<g id="line-blue-2-1280">
+<g id="Vector 4" filter="url(#filter0_d)">
+<use xlink:href="#path0_stroke" transform="translate(3061.5 2682)" fill="#2F80ED"/>
+</g>
+<g id="Ellipse 6" filter="url(#filter1_d)">
+<use xlink:href="#path1_fill" transform="matrix(-1 0 0 -1 3063 2683)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="3056" y="2678" width="245" height="77" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<filter id="filter1_d" filterUnits="userSpaceOnUse" x="3054" y="2674" width="13" height="13" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="0"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.184314 0 0 0 0 0.501961 0 0 0 0 0.929412 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_stroke" d="M 234.5 66.5C 235.052 66.5 235.5 66.0523 235.5 65.5C 235.5 64.9477 235.052 64.5 234.5 64.5L 234.5 66.5ZM 37.5 65.5L 36.6322 65.9968L 36.9202 66.5L 37.5 66.5L 37.5 65.5ZM 0.867835 -0.496852C 0.593431 -0.976144 -0.0175601 -1.14224 -0.496852 -0.867835C -0.976144 -0.593431 -1.14224 0.0175601 -0.867835 0.496852L 0.867835 -0.496852ZM 234.5 64.5L 37.5 64.5L 37.5 66.5L 234.5 66.5L 234.5 64.5ZM 38.3678 65.0032L 0.867835 -0.496852L -0.867835 0.496852L 36.6322 65.9968L 38.3678 65.0032Z"/>
+<path id="path1_fill" d="M 5 2.5C 5 3.88071 3.88071 5 2.5 5C 1.11929 5 0 3.88071 0 2.5C 0 1.11929 1.11929 0 2.5 0C 3.88071 0 5 1.11929 5 2.5Z"/>
+</defs>
+</svg>

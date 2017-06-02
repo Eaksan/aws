@@ -1,0 +1,12 @@
+<svg width="14" height="16" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Polygon</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(116 -1544)" figma:type="canvas">
+<g id="Polygon" figma:type="regular-polygon">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 -102 1543)" fill="#FF3333"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 9 0L 16.7942 13.5L 1.20577 13.5L 9 0Z"/>
+</defs>
+</svg>

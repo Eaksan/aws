@@ -1,0 +1,64 @@
+<svg width="1515" height="670" viewBox="0 0 1515 670" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>&#208;&#164;&#208;&#184;&#209;&#136;&#208;&#186;&#208;&#184;</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(199 257)" figma:type="canvas">
+<g id="&#208;&#164;&#208;&#184;&#209;&#136;&#208;&#186;&#208;&#184;" figma:type="frame">
+<g id="Vector" figma:type="vector">
+<use xlink:href="#path0_stroke" transform="translate(-190.5 -245)" fill="#000000" fill-opacity="0.05"/>
+</g>
+<g id="Group" figma:type="frame">
+<g id="Ellipse 2" figma:type="ellipse">
+<use xlink:href="#path1_fill" transform="translate(-163 -173)" fill="#6B5195"/>
+</g>
+</g>
+<g id="Group" figma:type="frame">
+<g id="Ellipse 2" figma:type="ellipse">
+<use xlink:href="#path2_fill" transform="translate(359 -158)" fill="#56CCF2"/>
+</g>
+</g>
+<g id="Group" figma:type="frame">
+<g id="Ellipse 2" figma:type="ellipse">
+<use xlink:href="#path2_fill" transform="translate(592 257)" fill="#6B5195"/>
+</g>
+</g>
+<g id="Group" figma:type="frame">
+<g id="Ellipse 2" figma:type="ellipse">
+<use xlink:href="#path3_fill" transform="translate(-199 257)" fill="#F4D34F"/>
+</g>
+</g>
+<g id="Group" figma:type="frame">
+<g id="Ellipse 2" figma:type="ellipse">
+<use xlink:href="#path2_fill" transform="translate(1171 113)" fill="#F4D34F"/>
+</g>
+</g>
+<g id="Group" figma:type="frame">
+<g id="Ellipse 2" figma:type="ellipse">
+<use xlink:href="#path4_fill" transform="translate(66 388)" fill="#D31805"/>
+</g>
+</g>
+<g id="Group" figma:type="frame">
+<g id="Ellipse 2" figma:type="ellipse">
+<use xlink:href="#path3_fill" transform="translate(693 -215)" fill="#D31805"/>
+</g>
+</g>
+<g id="Group" figma:type="frame">
+<g id="Ellipse 2" figma:type="ellipse">
+<use xlink:href="#path2_fill" transform="translate(943 -257)" fill="#6B5195"/>
+</g>
+</g>
+<g id="Group" figma:type="frame">
+<g id="Ellipse 2" figma:type="ellipse">
+<use xlink:href="#path5_fill" transform="translate(1271 -102)" fill="#56CCF2"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 916 123.5L 916.039 123.001L 916.029 123.001L 916 123.5ZM 2.77271 511.945L 268.273 647.445L 268.727 646.555L 3.22729 511.055L 2.77271 511.945ZM 805.122 515.985L 1372.62 373.485L 1372.38 372.515L 804.878 515.015L 805.122 515.985ZM 1478.21 155.048L 1155.21 2.54786L 1154.79 3.45214L 1477.79 155.952L 1478.21 155.048ZM 916.029 123.001L 571.529 103.001L 571.471 103.999L 915.971 123.999L 916.029 123.001ZM 46.2523 89.9343L 793.252 515.934L 793.748 515.066L 46.7477 89.0657L 46.2523 89.9343ZM 272.941 645.236L 563.441 103.736L 562.559 103.264L 272.059 644.764L 272.941 645.236ZM 43.0028 97.4474L -0.497223 508.447L 0.497223 508.553L 43.9972 97.5526L 43.0028 97.4474ZM 801.912 508.783L 1146.41 6.78292L 1145.59 6.21708L 801.088 508.217L 801.912 508.783ZM 1481.56 175.771L 1378.56 375.271L 1379.44 375.729L 1482.44 176.229L 1481.56 175.771ZM 915.961 123.998L 1475.46 167.998L 1475.54 167.002L 916.039 123.002L 915.961 123.998ZM 1138.92 -0.494198L 894.924 37.0058L 895.076 37.9942L 1139.08 0.494198L 1138.92 -0.494198Z"/>
+<path id="path1_fill" d="M 35 17.5C 35 27.165 27.165 35 17.5 35C 7.83502 35 0 27.165 0 17.5C 0 7.83502 7.83502 0 17.5 0C 27.165 0 35 7.83502 35 17.5Z"/>
+<path id="path2_fill" d="M 29 14.5C 29 22.5081 22.5081 29 14.5 29C 6.49187 29 0 22.5081 0 14.5C 0 6.49187 6.49187 0 14.5 0C 22.5081 0 29 6.49187 29 14.5Z"/>
+<path id="path3_fill" d="M 15 7.5C 15 11.6421 11.6421 15 7.5 15C 3.35786 15 0 11.6421 0 7.5C 0 3.35786 3.35786 0 7.5 0C 11.6421 0 15 3.35786 15 7.5Z"/>
+<path id="path4_fill" d="M 25 12.5C 25 19.4036 19.4036 25 12.5 25C 5.59644 25 0 19.4036 0 12.5C 0 5.59644 5.59644 0 12.5 0C 19.4036 0 25 5.59644 25 12.5Z"/>
+<path id="path5_fill" d="M 45 22.5C 45 34.9264 34.9264 45 22.5 45C 10.0736 45 0 34.9264 0 22.5C 0 10.0736 10.0736 0 22.5 0C 34.9264 0 45 10.0736 45 22.5Z"/>
+</defs>
+</svg>

@@ -1,0 +1,26 @@
+<svg width="22" height="22" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>super g</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(235 -570)" figma:type="canvas">
+<g id="super g" figma:type="frame">
+<g id="Shape" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-233.7 570.146)" fill="#EA4335"/>
+</g>
+<g id="Shape" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(-224.036 578.993)" fill="#4285F4"/>
+</g>
+<g id="Shape" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(-234.854 576.108)" fill="#FBBC05"/>
+</g>
+<g id="Shape" figma:type="vector">
+<use xlink:href="#path3_fill" transform="translate(-233.688 583.103)" fill="#34A853"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 9.66381 4.18284C 11.6951 4.18284 13.0654 5.06028 13.8467 5.79348L 16.8997 2.8126C 15.0246 1.06975 12.5846 0 9.66381 0C 5.43289 0 1.77891 2.42797 0 5.96176L 3.49772 8.6782C 4.37516 6.06993 6.80313 4.18284 9.66381 4.18284Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 10.385 2.21162C 10.385 1.32216 10.3129 0.673101 10.1566 0L 0 0L 0 4.01457L 5.96176 4.01457C 5.84156 5.0122 5.1925 6.51466 3.75014 7.52431L 7.16372 10.1686C 9.20707 8.28155 10.385 5.50501 10.385 2.21162Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 4.66363 6.99545C 4.43526 6.32235 4.30304 5.60116 4.30304 4.85595C 4.30304 4.11073 4.43526 3.38955 4.65161 2.71644L 1.15389 0C 0.420688 1.4664 0 3.11309 0 4.85595C 0 6.5988 0.420688 8.24549 1.15389 9.71189L 4.66363 6.99545Z"/>
+<path id="path3_fill" fill-rule="evenodd" d="M 9.65179 8.6782C 12.5726 8.6782 15.0246 7.71663 16.8155 6.05791L 13.4019 3.41359C 12.4884 4.05063 11.2624 4.49536 9.65179 4.49536C 6.79111 4.49536 4.36314 2.60827 3.49772 0L 0 2.71644C 1.77891 6.25023 5.42087 8.6782 9.65179 8.6782Z"/>
+</defs>
+</svg>

@@ -1,0 +1,12 @@
+<svg width="35" height="35" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>el1</title>
+<desc>Created using Figma</desc>
+<g id="1el1">
+<g id="el1">
+<use xlink:href="#el1" fill="#6B5195"/>
+</g>
+</g>
+<defs>
+<path id="el1" d="M 35 17.5C 35 27.165 27.165 35 17.5 35C 7.83502 35 0 27.165 0 17.5C 0 7.83502 7.83502 0 17.5 0C 27.165 0 35 7.83502 35 17.5Z"/>
+</defs>
+</svg>

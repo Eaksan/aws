@@ -1,0 +1,12 @@
+<svg width="45" height="45" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>el5</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1722 -145)">
+<g id="el5">
+<use xlink:href="#el5" transform="translate(1722 145)" fill="#56CCF2"/>
+</g>
+</g>
+<defs>
+<path id="el5" d="M 45 22.5C 45 34.9264 34.9264 45 22.5 45C 10.0736 45 0 34.9264 0 22.5C 0 10.0736 10.0736 0 22.5 0C 34.9264 0 45 10.0736 45 22.5Z"/>
+</defs>
+</svg>
